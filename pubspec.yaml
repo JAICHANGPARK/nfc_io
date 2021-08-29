@@ -28,17 +28,13 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.dreamwalker.flutter_nfc_io
-        pluginClass: FlutterNfcIoPlugin
+        package: mv.fr.nfc_io
+        pluginClass: NfcIoPlugin
       ios:
-        pluginClass: FlutterNfcIoPlugin
+        pluginClass: NfcIoPlugin
       windows:
-        pluginClass: FlutterNfcIoPlugin
-      web:
-        pluginClass: FlutterNfcIoWeb
-        fileName: flutter_nfc_io_web.dart
-
-
+        pluginClass: NfcIoPlugin
+     
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

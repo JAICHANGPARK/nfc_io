@@ -81,7 +81,7 @@ class NfcIo {
   }
 
   static Future<NfcData> get stopReading async {
-    final Map data = await (_channel.invokeMethod('stopReading') as FutureOr<Map<dynamic, dynamic>>);
-    return NfcData.fromMap(data);
+    final Map? data = await (_channel.invokeMethod('stopReading'));
+    return NfcData.fromMap(data?? {});
   }
 }

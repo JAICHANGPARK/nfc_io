@@ -125,6 +125,7 @@ class NfcIoPlugin :
         }
 
         if (call.method == "getPlatformVersion") {
+            result.success("Android ${android.os.Build.VERSION.RELEASE}")
         }
     }
 

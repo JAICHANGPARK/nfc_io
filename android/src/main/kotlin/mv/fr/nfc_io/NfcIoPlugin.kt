@@ -67,7 +67,7 @@ class NfcIoPlugin :
     }
 
     override fun onDetachedFromEngine(p0: FlutterPlugin.FlutterPluginBinding) {
-        TODO("Not yet implemented")
+//        TODO("Not yet implemented")
         channel.setMethodCallHandler(null)
         eventChannel.setStreamHandler(null)
     }
